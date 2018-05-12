@@ -4,19 +4,9 @@
                                         mp02 (Nested loop) - 50 pts
                                     Due: 5:00 pm, Friday June 16, 2017
 -----------------------------------------------------------------------------------------------------------
-Electronic submission:
-    - Use the 'Submit p2' link on moodle to test your code, make your submission and receive immediate
-      feedback.
+
 -----------------------------------------------------------------------------------------------------------
-Objectives:
-    - To gain experience with the BlueJ IDE and how to edit source code for a class. 
-    - To create instances of a class and call its methods.
-    - To use the Scanner to request keyboard input from the user.
-    - To use a nested for and a do/while statement.
-    - To code a class given its UML description.
------------------------------------------------------------------------------------------------------------   
-Project setup:
-    The mp02.MultiplicationTable project is provided to you with this README file.
+
 -----------------------------------------------------------------------------------------------------------    
 Problem description:
     In this mp you are to implement the class MultiplicationTable whose UML is given below. Make sure you
@@ -75,6 +65,7 @@ Implementation details:
     character. The one that shares the key with the \.
     
     Sample output:
+    THIS IS THE FINAL OUTPUT 
 
       1   2   3   4   5   6   7   8   9  10
     ----------------------------------------
@@ -135,3 +126,6 @@ displayTable                                                     10
 
 isFactorValid                                                    10
   : validates for range (0, 30]
+  
+  
+  RUN IN BLUEJAY IDE OR NETBEANS
