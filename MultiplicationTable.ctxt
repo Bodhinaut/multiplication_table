@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=MultiplicationTable
+comment0.text=\ Kyle\ M.\ Shive\r\n\ Program\ 2\r\n\ 6/08/2017\r\n\ CS140-021\r\n\ CS140-001\r\n\ Socratis\ Tornaritis\r\n
+comment1.params=
+comment1.target=MultiplicationTable()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MultiplicationTable\r\n
+comment2.params=thisFactor
+comment2.target=MultiplicationTable(int)
+comment3.params=
+comment3.target=int\ getFactor()
+comment4.params=thisFactor
+comment4.target=void\ setFactor(int)
+comment5.params=thisFactor
+comment5.target=boolean\ isFactorValid(int)
+comment6.params=
+comment6.target=void\ askUserForMultiplicationFactor()
+comment7.params=
+comment7.target=void\ displayTable()
+numComments=8

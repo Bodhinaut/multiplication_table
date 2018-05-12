@@ -1,0 +1,186 @@
+//90% of the time we will use a For statement, not often you use a while or do/while
+//order is for, while, do/while, 
+//do while is perfect candidate for validation, keep asking until they give you what you want
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    /* Counting loop. */
+    //first step declare looping variable
+    //next the last part, every iteration after completing body, what should count become, this is update step
+    //the middle condition is repeat as long as test is true you do something, or when do you stop?
+    //initital step first, step 2nd, if that test is true, you execute body, then increment or decrement then
+    //test again
+    for (int count = 10; count >=1; count -= 1) {
+        System.out.print(count + "...");
+    }
+    System.out.println("Blast off!");
+    
+    //now how to do same problem with a while statemtn
+    
+    //int count is initilaized outside of body
+    int count = 10;
+    //This is not the way to write a while, since the initial test is ALWAYS TRUE. Remember, the while should
+    //be given the option to fail on the first try
+    //failure of while is when the test fails at the begginnig, 
+    while (count >= 1) {
+        System.out.print(count + "...");
+        
+        count -= 1;
+    
+    }
+    System.out.println("Blast off!");
+    
+    count = 10;
+    //This is not the way to write a while, since the initial test is ALWAYS TRUE. Remember, the while should
+    //be given the option to fail on the first try
+    do {
+        
+        System.out.print(count + "...");
+        
+        count -= 1;
+    
+    }while (count >=1);
+    System.out.println("Blast off!");
+    
+    /* ask the user for a postiive number, repeat the imput until you get one */
+    //belowe we give false coniditon do it keeps repeating until they give the positive number
+    //below is perfect candidate for a do/while
+    int number;
+    Scanner keyboard = new Scanner(System.in);
+    do {
+        System.out.print("Enter a postivie integer number: ");
+        number = keyboard.nextInt();
+    } while (number <= 0);
+    
+    for (int outer = 1; outer <=5; outer += 1) {
+        for(int inner = 1; inner <=3; inner +=1) {
+            System.out.print( String.valueOf(outer) + String.valueOf(inner) + " ");
+            //need to make sure guys above are strings, need to ?typecast?
+        //concatonate 2 string values that are number must do typecasting, change 
+        //temporarily to something else, above the string becomes 1 = "1"
+        //for every outter value, we complet and inner, 
+        //when typecast be explicit, 
+        }
+        System.out.println();
+
+    }
+    
+    //let the user know always
+    System.out.println("Program ended successfully.");
+    }
+    
+
+}
+
+On Wed, Jun 14, 2017 at 12:56 PM, Kyle Shive <kyleshive@gmail.com> wrote:
+//90% of the time we will use a For statement, not often you use a while or do/while
+//order is for, while, do/while, 
+//do while is perfect candidate for validation, keep asking until they give you what you want
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    /* Counting loop. */
+    //first step declare looping variable
+    //next the last part, every iteration after completing body, what should count become, this is update step
+    //the middle condition is repeat as long as test is true you do something, or when do you stop?
+    //initital step first, step 2nd, if that test is true, you execute body, then increment or decrement then
+    //test again
+    for (int count = 10; count >=1; count -= 1) {
+        System.out.print(count + "...");
+    }
+    System.out.println("Blast off!");
+    
+    //now how to do same problem with a while statemtn
+    
+    //int count is initilaized outside of body
+    int count = 10;
+    //This is not the way to write a while, since the initial test is ALWAYS TRUE. Remember, the while should
+    //be given the option to fail on the first try
+    while (count >= 1) {
+        System.out.print(count + "...");
+        
+        count -= 1;
+    
+    }
+    System.out.println("Blast off!");
+    
+    count = 10;
+    //This is not the way to write a while, since the initial test is ALWAYS TRUE. Remember, the while should
+    //be given the option to fail on the first try
+    do {
+        
+        System.out.print(count + "...");
+        
+        count -= 1;
+    
+    }while (count >=1);
+    System.out.println("Blast off!");
+    
+    /* ask the user for a postiive number, repeat the imput until you get one */
+    //belowe we give false coniditon do it keeps repeating until they give the positive number
+    //below is perfect candidate for a do/while
+    int number;
+    Scanner keyboard = new Scanner(System.in);
+    do {
+        System.out.print("Enter a postivie integer number: ");
+        number = keyboard.nextInt();
+    } while (number <= 0);
+    
+    for (int outer = 1; outer <=5; outer += 1) {
+        for(int inner = 1; inner <=3; inner +=1) {
+            System.out.print(outer + inner);
+            //need to make sure guys above are strings, need to ?typecast?
+        
+        }
+    }
+    
+    //let the user know always
+    System.out.println("Program ended successfully.");
+    }
+  
+  
+  
+}
+---------------------------------------------------------------------------------------
+
+/** Kyle M. Shive
+ * Program 2
+ * 6/08/2017
+ * CS140-021
+ * CS140-001
+ * Socratis Tornaritis
+ */
+public class Die {
+    
+    private int faceValue;
+    private int numberOfFaces;
+    
+    public Die() {
+        this(1,6);
+    }
+    
+    public Die(int faceValue, int numberOfFaces) {
+    this.faceValue = faceValue;
+    this.numberOfFaces = numberOfFaces;
+    
+    }
+    
+    public int getFaceValue ()     {return faceValue;}
+    public int getNumberOfFaces () {return numberOfFaces;}
+    
+    public void setFaceValue ()     {this.faceValue = faceValue;}
+    
+    public void setNumberOfFaces () {this.numberOfFaces = numberOfFaces;}
+    
+    
+      @Override
+    public String toString() {
+        String str = "";
+       str += numberOfFaces + " face die. Current face value is " + faceValue;
+        return str;
+    }
+}
